@@ -17,6 +17,7 @@ public class CoursesMapper {
         course.setDescription(rs.getString("description"));
         course.setDuration(rs.getInt("duration"));
         course.setFee(rs.getFloat("fee"));
+        course.setStatus(rs.getInt("status"));
         return course;
     }
 }

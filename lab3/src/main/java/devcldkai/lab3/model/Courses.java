@@ -12,6 +12,8 @@ public class Courses {
 
     private float fee;
 
+    private int status;
+
     public Courses(){}
 
     public Courses(String id, String name, String description, int duration, float fee) {
@@ -19,6 +21,8 @@ public class Courses {
         this.name = name;
         this.description = description;
         this.duration = duration;
+        this.fee = fee;
+        this.status = 1;
     }
 
     public String getId() {
@@ -59,5 +63,13 @@ public class Courses {
 
     public void setFee(float fee) {
         this.fee = fee;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 }
